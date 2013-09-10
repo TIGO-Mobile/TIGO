@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Version 0.0.0.0.0.4 del diseño de la pagina de tigo, aun con problemas de estructura!-->
+<!-- El objetivo de esta pagina es presentarse como un pop-up cuando se seleccione algo para comprar para que el cliente confirme, debemos encontrar una forma de asignar el valor dinamicamente para que
+    represente lo que quiere el cliente
+!-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tigo Mobile</title>
+		<link rel="stylesheet" href="themes/Tigo.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	</head>
+	<body>
+            <div data-role="page" data-theme="b">
+                <div data-role="header" data-theme="b">
+			<p style="text-align: center">Hola</p>
+                </div>
+		<div data-role="content" data-theme="b">
+			Esta seguro que Desea comprar
+			<p>$Alguna cosa</p>
+			<p>Se enviara un mensaje por el valor de $price</p>
+			<form method="post">
+				<input type="button" value="Cancelar"/>
+				<input type="submit" value="Aceptar" />
+			</form>
+		</div>
+            </div>
+        </body>
